@@ -32,7 +32,7 @@
 
     <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
     <script type="text/javascript" src="{!! asset('js/jquery.googlemap.js') !!}"></script>
-
+    <script type="text/javascript" src="{!! asset('js/jquery.googlemap.js') !!}"></script>
     <style type="text/css">
         tfoot input {
             width: 100%;
@@ -165,9 +165,9 @@
                                       $(function() {
                                         $("#map").googleMap();
                                         $("#map").addMarker({
-                                          coords: [48.895651, 2.290569],
-                                          icon:   "{!! asset('img/free-5-red.png') !!}", // Icon URL,
-                                          url: 'http://www.tiloweb.com' // Link URL
+                                          coords: [47.0637849, -0.882741317],
+                                          icon:   "{!! asset('img/blue-dot.png') !!}", // Icon URL,
+                                          url: 'http://www.creadis.pro' // Link URL
                                         });
                                       })
                                     </script>
@@ -201,6 +201,7 @@
     <script src="{!! asset('bower_components/datatables/media/js/jquery.dataTables.min.js') !!}"></script>
     <script src="{!! asset('bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js') !!}"></script>
     <script src="{!! asset('bower_components/datatables-responsive/js/dataTables.responsive.js') !!}"></script>
+
     <script src="{!! asset('dist/js/dataTables.tableTools.js') !!}"></script>
     
     <!-- Custom Theme JavaScript -->
@@ -279,6 +280,7 @@
                 });
                 
             });
+            $(window).scrollTop($('#map').offset().top);
         }
 
         function removeMarkers(selectedElements){

@@ -21,6 +21,9 @@ Route::get('home',['middleware' => 'auth' , function(){
 
 Route::get('map',['middleware' => 'auth' , 'uses' => 'MapController@index']);
 
+Route::get('form',['middleware' => 'auth' , 'uses' => 'MapController@addFormatteur']);
+
+
 
 Route::get('login', function () {
     return view('auth/log');

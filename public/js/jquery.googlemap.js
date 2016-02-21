@@ -7,7 +7,7 @@ $(function() {
       type : "ROADMAP",
       debug : false,
       langage : "english",
-      scrollwheel: true
+      scrollwheel: true,
     }, params);
 
     switch(params.type) {
@@ -28,7 +28,7 @@ $(function() {
         zoom: params.zoom,
         center: new google.maps.LatLng(params.coords[0], params.coords[1]),
         mapTypeId: params.type,
-        streetViewControl: false,
+        streetViewControl: true,
         mapTypeControl: false,
         scrollwheel: params.scrollwheel
       });

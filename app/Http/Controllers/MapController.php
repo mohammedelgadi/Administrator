@@ -17,4 +17,8 @@ class MapController extends Controller
 
         return view('index',$data);
     }
+
+    public function addFormatteur(){
+        return view('formulaire');
+    }
 }
